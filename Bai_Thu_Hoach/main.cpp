@@ -41,6 +41,7 @@ istream& operator>>(istream& x, HANG &y){
     cout << "DON GIA: "; x>>y.DONGIA;
     cout << "SO LUONG: "; x>>y.SL;
     cout << "NAM SX: "; x>>y.NAM;
+    return x;
 }
 ostream& operator<<(ostream& x, HANG y){
     x << "MA HANG: " << y.MAH << endl;
@@ -48,6 +49,7 @@ ostream& operator<<(ostream& x, HANG y){
     x << "DON GIA: " << y.DONGIA << endl;
     x << "SO LUONG: " << y.SL << endl;
     x << "NAM SX: " << y.NAM << endl;
+    return x;
 }
 
 void Check(HANG *H, int n){
