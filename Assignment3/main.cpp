@@ -13,7 +13,8 @@ public:
     float operator-();
 };
 PS::PS(){
-    TS = MS = 0;
+    TS = 0;
+    MS = 1;
 }
 PS::PS(float t, float m){
     TS = t;
